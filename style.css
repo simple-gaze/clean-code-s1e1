@@ -5,30 +5,30 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.billboard {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.billboard img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.billboard .billboard__info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-.aaa { 
+.billboard { 
   text-align: center;
 }
 
 }
 
-.centered-main-page-element {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -40,7 +40,7 @@ body {
   flex-grow: 1
 }
 
-.task-row-wrapper {
+.wrapper {
   display: flex;
 }
 
