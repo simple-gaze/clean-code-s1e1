@@ -107,7 +107,7 @@ var editTask=function(){
     }
 
     //toggle .edit-mode on the parent.
-    listItem.classList.toggle("edit-modee");
+    listItem.classList.toggle("edit-mode");
 };
 
 
@@ -129,7 +129,8 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
-    listItem.classList.add("line-through");
+    var label=listItem.querySelector("label");
+    label.classList.add("line-through");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -142,6 +143,8 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incomplete-tasks.
     var listItem=this.parentNode;
+    var label=listItem.querySelector("label");
+    label.classList.remove("line-through");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
