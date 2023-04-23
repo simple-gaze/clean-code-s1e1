@@ -12,11 +12,11 @@ body {
   text-align: right;
 }
 
-.billboard-img {
+.billboard__img {
   width: 100%;
 }
 
-.billboard-info {
+.billboard__info {
   font-family: fantasy, cursive;
 }
 
@@ -40,7 +40,7 @@ body {
   flex-grow: 1;
 }
 
-.wrapper {
+.addition__inner {
   display: flex;
 }
 
@@ -102,7 +102,7 @@ button {
 }
 
 /* New Task */
-.addition-title {
+.addition__title {
   display: block;
   margin: 0 0 20px;
 }
